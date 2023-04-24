@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interiors</title>
+
+<style>
+	.box{
+		margin:auto;
+		width:1140px;
+
+	}
+	.container{
+		position: fixed;
+		top:0;
+		min-width:1140px;
+		height:70px;
+		padding-top: 20px;
+		margin-bottom: 10px;
+		background-color: #ca1e96fe;
+		z-index: 100;
+	}
+	.logo{
+		
+		margin-top: -70px;
+	}
+	
+	
+	
+	ul{
+		float:right;
+		list-style: none;
+		margin-top: -120px;
+		padding-right: 40px;
+		margin-right: 20px;
+
+
+	}
+
+	ul li {
+		display:inline-block;
+		
+	}
+	ul li a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:5px 20px;
+	}
+	ul li a:hover{
+		background-color:#ae3c5ed4;
+		color:#000;
+	}
+
+	ul li.active a{
+		background-color: #3ae8d1e0;
+		color:#000;
+	}
+	.dropbtn {
+  background-color: #262491e6;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+
+}
+	.dropdown{
+		position:relative;
+		display:inline-flex;
+	}
+	
+	.dropdown-items{
+		display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top:30px;
+	}
+	.dropdown-items a{
+		color:black;
+		padding:12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.dropdown-items a:hover{
+		background-color:#d9ab80;
+	}
+	.dropdown:hover .dropdown-items{
+		display:block;
+	}
+	.container1{
+		
+
+position: relative;
+width: 1140px;
+top:80px;
+	}
+
+		.text1{
+	position: relative;
+	margin:auto;
+	width:350px;
+	height:250px;
+	top:80px;
+	left:-330px;
+	color:#f0a93e;
+	font-family: vivaldi;
+	font-size: 30px;
+
+	}
+.container2{
+	position: relative;
+	margin-top:180px;
+
+
+
+}
+	.text2{
+		color:#f0a93e;
+		
+		
+		
+	}
+	.map{
+		margin-top: -300px;
+		margin-left:380px;
+	}
+	.getconnected{
+		margin:auto;
+		
+	margin:auto;
+	width:300px;
+	height:250px;
+	margin-left:10px;
+	margin-top: 50px;
+
+	}
+
+	table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+td, th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+    background-color: #f2d3ac;
+
+}
+
+	.footer{ 
+		width:1140px;
+		margin:auto;
+		height:300px;
+		background-color: #7d4014;
+}
+.line{
+	position:absolute;
+	border:2px solid #cbcfc8;
+	height:220px;
+	margin-left: 150px;
+	margin-top: 50px;
+}
+.ourproject{
+	margin-left: 60px;
+}
+.aboutus{
+	margin-left: 60px;
+}
+.footerlogo{
+	margin-left: 80px;
+}
+	ul{
+		list-style: none;
+		margin-top: -140px;
+		padding-right: 10px;
+		margin-right: 5px;
+
+
+	}
+
+	ul ol {
+		display:inline-block;
+		
+	}
+	ul ol a{
+		text-decoration: none;
+		color:#cbcfc8;
+		padding:15px 20px;
+	}
+	ul ol a:hover{
+		background-color:#d9ab80;
+		color:#000;
+	}
+
+	ul ol.active a{
+		background-color: #d9ab80;
+		color:#000;
+	}
+	.menu{
+		margin-right: 650px;
+	}
+	.contactus{
+		margin-top: -162px;
+		margin-left: 560px;
+
+	}
+		.followus{
+		margin-top: -155px;
+		margin-left: 800px;
+
+
+	}
+	.footer1{ 
+		width:1140px;
+		margin:auto;
+		height:50px;
+		background-color: black;
+}
+.copyright{
+	color:white;
+	margin-left: 450px;
+
+}
+</style>
+<script type = "text/javascript">
+function validate() {
+if( document.myForm.Name.value == "" ) {
+alert( "Please provide your name!" ); document.myForm.Name.focus() ; return false;
+}
+if( document.myForm.EMail.value == "" ) {
+alert( "Please provide your Email!" ); document.myForm.EMail.focus() ; return false;
+}
+if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+document.myForm.Zip.value.length != 5 ) {
+alert( "Please provide a zip in the format #####." ); document.myForm.Zip.focus() ; return false;
+}
+if( document.myForm.Country.value == "-1" ) {
+alert( "Please provide your country!" ); return false;
+}
+return( true );
+}
+</script>
+</head>
+<body>
+	<div class="box">
+	<div class="container">
+		<div class="logo">
+		<img src="interiorlogo.png" alt="logo" height="200" width="250">
+	</div>
+
+	<ul>
+		<li><a href="index.html" >  <img src="homebutton.png" alt="homebutton" width="25" height="25"> </a></li>
+		<li><a href="gallary.html" >Gallary</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+		<li class="dropdown">
+			<a href="services.html" class="dropdown-btn">Services</a>
+			<div class="dropdown-items">
+				<a href="gallary.html" target="_blank">&nbsp;Kitchen Design</a>
+				<a href="gallary.html" target="_blank">&nbsp;Bedroom Design</a>
+				<a href="gallary.html" target="_blank">&nbsp;Bathroom Design</a>
+				<a href="gallary.html" target="_blank">&nbsp;Living Room Design</a>
+			</div>
+		</li>
+		<li class="active"><a href="contact.html" >Contacts</a></li>
+		
+	</ul>
+	</div>
+		<div class="container1">
+<img src="banner3.jpg" alt="banner3" align="right">
+<div class="text1">
+	<h2>Get connected with us.</h2>
+		
+		
+	</div>
+</div>
+<div class="container2" >
+<div class="text2">	
+	<h2>Write Us</h2>
+
+<p>We are looking forward to hearing from you and learning more about your project. Please fill out the contact form and we will follow up with you as soon as possible!</p>
+</div>
+<form action = "next_page" name = "myForm" onsubmit = "return(validate());">
+	<table border = "5" bordercolor="black">
+	<tr>
+		<td>
+<table cellspacing = "2px" cellpadding = "2px" border = "1" >
+	<tr><th colspan="2"><center>Fill up the form</center></th></tr>
+<tr> <td align = "right">Your Name</td> <td><input type = "text" name = "Name" size="130" /></td> </tr>
+<tr> <td align = "right">Your Email</td> <td><input type = "text" name = "Email" size="130" /></td> </tr>
+<tr> <td align = "right">Number</td> <td><input type = "text" name = "Number" size="130" /></td> </tr>
+<tr> <td align = "right">Subject</td> <td><input type = "subject" name = "subject" size="130" /></td> </tr>
+<tr> <td align = "right" >Message</td> <td><textarea type = "subject" name = "message" size="130" style="height: 150px; width: 900px;" /></textarea>
+<tr> <td align = "right">Loaction</td> <td>
+<select name = "Location" >
+<option value = "1">Chapagaun</option>
+<option value = "2">Kumaripati</option>
+<option value = "3">Sanepa</option>
+<option value = "4">Godawari</option>
+<option value = "5">Satdobato</option>
+</select>
+</td> </tr>
+<tr>  <td colspan="2"><center><input type = "submit" value = "Submit" style="padding:12px 100px; background-color: #7d4014; 
+cursor: pointer; color: white; " /></center></td> </tr>
+</table>
+</td>
+</tr>
+</table>
+</form>
+<br>
+
+<div class="getconnected">
+
+<h1 style="color: #f0a93e;">Get connected</h1>
+<h3>Keep in touch</h3>
+<p>+977-2381234567</p>
+<p>Write us at</p>
+<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" style="color: #f0a93e; "> interiors@gmail.com</a>
+</div>
+
+</div>
+</div>
+<br>
+<div class="footer">
+	
+	<div class="line"></div>
+	<div class="footerlogo">
+	<img src="interiorlogo.png" alt="logo" height="200" width="250">
+</div>
+<div class="menu">
+
+	<ul>
+		<ol style="font-size: 20px;">&nbsp;&nbsp;&nbsp;MENU</ol><br><br>
+		<ol><a href="aboutus.html">About us</a></ol><br><br>
+		<ol><a href="services.html">Services</a></ol><br><br>
+		<ol><a href="contact.html">Process</a></ol><br><br>
+		<ol><a href="contact.html">Contact us</a></ol><br><br>
+	</ul>
+
+</div>
+<div class="contactus">
+    <p style="font-size:20px;">CONTACT US</p>
+    <p style="color: #cbcfc8;">Call us</p>
+    <p style="color: #cbcfc8;">+977-9805924711</p>
+    <p style="color: #cbcfc8;">Write us :<a href="https://www.gmail.com" target="_blank" style="color: #cbcfc8;"> interiordesigns@gmail.com</p></a>
+
+</div>
+
+<div class="followus">
+	<p style="font-size:20px;">FOLLOW US</p>
+	<a href="https://www.facebook.com" target="_blank"><img src="facebook.png" style="padding: 10px;" ></a>
+	<a href="https://www.instagram.com" target="_blank"><img src="instagram.png" style="padding: 10px;"></a>
+	<a href="https://www.twitter.com" target="_blank"><img src="twitter.png" style="padding: 10px;" ></a>
+</div>
+
+</div>
+<div class="footer1">
+	<div class="copyright">
+		<br>
+©Copyright 2020.All rights reserved.
+</div>
+
+</div>
+
+
+	</div>
+</body>
+</html>
